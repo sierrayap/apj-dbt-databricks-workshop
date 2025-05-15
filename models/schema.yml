@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: discounts
+    columns:
+      - name: discount
+        tests:
+          - accepted_values:
+              values: ['discounted','not_discounted']
