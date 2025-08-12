@@ -2,29 +2,20 @@ version: 2
 
 sources:
   - name: tpch
-    database: dev_bootcamp  
+    database: samples  
     schema: tpch  
     tables:
-      - name: orders_bronze
+      - name: orders
         columns:
               - name: O_ORDERKEY
                 description: Primary key of the orders table
                 tests:
                   - unique
                   - not_null
-      - name: customer_bronze
+      - name: customer
         columns:
             - name: C_CUSTKEY
               description: Primary key of the customer table
               tests:
                 - unique
                 - not_null
-      - name: lineitem_bronze
-        columns:
-              - name: L_ORDERKEY
-                description: Primary key of the lineitem table
-                tests:
-                  - unique:
-                      config:
-                        severity: warn
-                  - not_null
