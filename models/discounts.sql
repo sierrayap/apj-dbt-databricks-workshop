@@ -3,7 +3,7 @@
         materialized='table'
     )
 }}
-
+-- test
 select 
 o.O_ORDERKEY,
 o.O_TOTALPRICE, 
