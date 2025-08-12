@@ -1,21 +1,22 @@
 version: 2
 
+
 sources:
-  - name: tpch
-    database: samples  
-    schema: tpch  
-    tables:
-      - name: orders
-        columns:
-              - name: O_ORDERKEY
-                description: Primary key of the orders table
-                tests:
-                  - unique
-                  - not_null
-      - name: customer
-        columns:
-            - name: C_CUSTKEY
-              description: Primary key of the customer table
-              tests:
-                - unique
-                - not_null
+ - name: tpch
+   database: samples
+   schema: tpch 
+   tables:
+     - name: orders
+       columns:
+             - name: O_ORDERKEY
+               description: Primary key of the orders table
+               tests:
+                 - unique
+                 - not_null
+     - name: customer
+       columns:
+           - name: C_CUSTKEY
+             description: Primary key of the customer table
+             tests:
+               - unique
+               - not_null
