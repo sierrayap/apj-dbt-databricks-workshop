@@ -6,4 +6,5 @@
 
 
 select *
-from stream read_files('/Volumes/apj_dbt_workshop/setup/apj-dbt-workshop/lineitem.json/')
+from stream 
+read_files('/Volumes/apj_dbt_workshop/setup/apj-dbt-workshop/lineitem.json/')
