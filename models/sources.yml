@@ -20,3 +20,13 @@ sources:
              tests:
                - unique
                - not_null
+     - name: lineitem_bronze
+       columns:
+             - name: L_ORDERKEY
+               description: Primary key of the lineitem table
+               tests:
+                 - unique:
+                     config:
+                       severity: warn
+                 - not_null
+
