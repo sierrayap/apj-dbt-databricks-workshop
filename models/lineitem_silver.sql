@@ -1,9 +1,3 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
-
 select
   L_ORDERKEY,
   L_LINENUMBER,
