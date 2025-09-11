@@ -20,3 +20,9 @@ sources:
              tests:
                - unique
                - not_null
+     - name: lineitem_bronze
+       columns:
+             - name: L_ORDERKEY
+               tests:
+                 - unique
+                 - not_null
